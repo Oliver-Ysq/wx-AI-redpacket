@@ -1,0 +1,36 @@
+/* components/loading/shadow-list-item/shadow-list-item.wxss */
+.loadingPlace {
+  border-radius: 16px;
+  width: 690rpx;
+  height: 140rpx;
+  margin-bottom: 2.75vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loading-left {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background: #E5EBFF;
+  margin-right: 2.7vw;
+}
+
+.loading-right {
+  flex: 1;
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loading-item {
+  width: 100%;
+  background: #E5EBFF;
+  height: 40rpx;
+  border-radius: 20rpx;
+}

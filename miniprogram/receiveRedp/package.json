@@ -1,0 +1,21 @@
+{
+  "name": "receive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "receive.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow-models/blazeface": "0.0.5",
+    "@tensorflow-models/facemesh": "^0.0.5",
+    "@tensorflow-models/posenet": "^2.2.1",
+    "@tensorflow/tfjs-layers": "2.1.0"
+  },
+  "resolutions": {
+    "tfjs-image-recognition-base/@tensorflow/tfjs-core": "<=1.2.9"
+  }
+}

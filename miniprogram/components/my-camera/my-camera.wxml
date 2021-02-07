@@ -1,0 +1,27 @@
+<canvas canvas-id="getImg" id="getImg" style="position: absolute; width: 480px; height: 640px; left: -720px;"></canvas>
+<image wx:if="{{activeType==1}}" src="/images/detail/emotion/{{titleText}}.svg" mode="aspectFit" class="top-icon">
+  </image>
+<camera class="mycamera" style="height: {{cameraHeight}}px; width: {{cameraWidth}}px" device-position="{{deviceType}}"
+  frame-size="{{frameSize}}" flash="off" binderror="onCameraError">
+
+  <!--*************** test *****************-->
+  <canvas style="width: 100%;height: 100vh;" canvas-id="pose">
+  </canvas>
+
+  <image src="/images/detail/scan.svg" mode="aspectFit" class="scanLine"></image>
+
+  <view class="tl angle"></view>
+  <view class="title">{{titleText}}</view>
+  <view class="tr angle"></view>
+  <view class="bl angle"></view>
+  <view class="bottomText {{wrongTime>=maxWrongTime?'animation-shaking':''}} {{state==1?'animation-hop':''}}">
+    {{wrongTime<maxWrongTime?bottomText:'识别不成功，再试试吧'}}</view>
+  <view class="br angle"></view>
+</camera>
+
+<view class="space">
+  <view class="notice" wx:if="{{state==0 && activeType==3}}">
+    {{levelText}}
+  </view>
+  <image class="yesNotice" wx:if="{{state==1}}" src="/images/detail/yes.svg" mode="aspectFit"></image>
+</view>

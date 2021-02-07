@@ -1,0 +1,26 @@
+<view class="myLayout">
+
+  <view class="backgroundWrapper">
+    <image src="/images/myRedp/bg.svg" mode="aspectFit" class="bg"></image>
+    <image src="{{avatarUrl}}" class="avatar"></image>
+  </view>
+  <view class="center-text"><text class="nameColor">{{nickname}}</text>{{' '+type==0?'共发出':'共收到'}}</view>
+  <view class="numberWrapper">
+    <view class="number-item">
+      <view>金额 (元)</view>
+      <view class="number-number">{{money}}</view>
+    </view>
+    <view class="number-item">
+      <view>数量 (个)</view>
+      <view class="number-number">{{number}}</view>
+    </view>
+  </view>
+  <view class="recordListWrapper">
+    <block wx:for="{{list}}" wx:key="item" wx:if="{{hasInfo || type==1}}">
+      <record-list-item content="{{item}}" type="{{type}}"></record-list-item>
+    </block>
+    <block wx:if="{{!hasInfo && type==0}}">
+      <shadow-list-item type="1"></shadow-list-item>
+    </block>
+  </view>
+</view>

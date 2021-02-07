@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="50px" viewBox="0 0 40 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="345" height="70" rx="16"></rect>
+        <filter x="-1.9%" y="-7.9%" width="103.8%" height="118.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.897068799   0 0 0 0 0.921990693   0 0 0 0 0.999003112  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画图红包_开始" transform="translate(-320.000000, -520.000000)">
+            <rect fill="#F9F9F9" x="0" y="0" width="375" height="812"></rect>
+            <rect id="矩形" fill="#FFFFFF" x="-1" y="0" width="375" height="812"></rect>
+            <g id="编组-2" transform="translate(15.000000, 509.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M330,11 C316.191537,11 305,22.1915367 305,36 C305,49.8084633 316.191537,61 330,61 C343.808463,61 355,49.8084633 355,36 C354.994432,22.1915367 343.802895,11 330,11 Z M340.974388,33.0378619 L340.974388,38.6057906 L333.062361,38.6057906 L333.062361,42.0077951 L340.974388,42.0077951 L340.974388,47.5757238 L333.062361,47.5757238 L333.062361,53.0657016 L326.937639,53.0657016 L326.937639,47.5757238 L319.404232,47.5757238 L319.404232,42.0077951 L326.937639,42.0077951 L326.937639,38.6057906 L319.404232,38.6057906 L319.404232,33.0378619 L326.861915,33.0378619 L318.452116,23.7282851 L322.583519,19.9977728 L330.128062,28.3496659 L337.628062,19.9309577 L341.787305,23.6336303 L333.413753,33.0378619 L340.974388,33.0378619 L340.974388,33.0378619 Z" id="形状" fill="#E5EBFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

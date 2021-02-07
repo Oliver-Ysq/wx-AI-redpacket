@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "layout-swiper-item": "/components/myRedp/layout-swiper-item/layout-swiper-item"
+    },
+    "navigationBarTitleText": "我的红包"
+}

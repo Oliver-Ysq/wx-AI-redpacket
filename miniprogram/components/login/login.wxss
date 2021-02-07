@@ -1,0 +1,48 @@
+.layout {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.backgound {
+  box-sizing: border-box;
+  width: 660rpx;
+  height: 46.68vh;
+  /* margin: 13.8vh auto 7.6vh auto; */
+  position: relative;
+}
+
+.icon {
+  height: 8.63vh;
+  width: 6.85vh;
+}
+
+.text {
+  font-size: 48rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #8294FF;
+  margin-top: 6vh;
+}
+
+.myButton {
+  width: 570rpx !important;
+  height: 90rpx !important;
+  background: #FE6B88;
+  box-shadow: 0px 8rpx 32rpx 0px #FFC0CD;
+  border-radius: 50rpx;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #fff;
+
+  margin-bottom: 11.72vh;
+}

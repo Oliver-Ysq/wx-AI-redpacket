@@ -1,0 +1,21 @@
+<view class="layout">
+
+  <!-- <painter  widthPixels="1000" customStyle='position: absolute; left: -9999rpx;' palette="{{template}}" bind:imgOK="onImgOK"
+    bind:imgErr="onImgErr" /> -->
+  <view class="bgWrapper" bindtap="test">
+    <image src="{{imgurl?imgurl:'https://weixinredpacket-1258344707.file.myqcloud.com/mobilenet/static/shareBg.svg'}}"
+      mode="aspectFit" class="backgroundImg"></image>
+  </view>
+  <view class="buttonsWrapper">
+    <!-- <button class="btn1" bindtap="saveImg"> -->
+      <button class="btn1">
+      <image src="/images/share/pyq.svg" class="icon"></image>
+      <text class="btnText">保存分享图</text>
+    </button>
+    <button class="btn2" bindtap="share" open-type="share">
+      <image src="/images/share/share.svg" class="icon"></image>
+      <text class="btnText">发送给朋友</text>
+    </button>
+  </view>
+  <view class="bottomText">获得的红包将收入账户余额中</view>
+</view>

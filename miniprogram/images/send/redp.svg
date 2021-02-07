@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="46px" viewBox="0 0 33 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="325" height="70" rx="16"></rect>
+        <filter x="-4.9%" y="-20.0%" width="109.8%" height="145.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.897068799   0 0 0 0 0.921990693   0 0 0 0 0.999003112  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="325" height="70" rx="16"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画图红包_首页" transform="translate(-25.000000, -340.000000)">
+            <rect id="矩形" fill="#FFFFFF" x="0" y="0" width="375" height="812"></rect>
+            <g id="编组-2" transform="translate(25.000000, 328.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="矩形" fill="#FFFFFF" xlink:href="#path-3"></use>
+                <path d="M27.2409244,58 L0.689022887,58 C-2.45377938,58 -5,55.5137387 -5,52.4462638 L-5,20.877193 C-0.595771254,25.4287345 6.47059658,28.380795 14.4386755,28.380795 C21.8589321,28.380795 28.4945002,25.8197956 32.9298246,21.7924097 L32.9298246,52.4463256 C32.9298246,55.5137387 30.382684,58 27.2409244,58 L27.2409244,58 Z M13.9648813,33.7894737 C9.73058461,33.7894737 6.29824561,37.0411108 6.29824561,41.0526315 C6.29824561,45.0636672 9.73058461,48.3157895 13.9648813,48.3157895 C18.1992399,48.3157895 21.6315789,45.0636672 21.6315789,41.0526315 C21.6315789,37.0411108 18.1991779,33.7894737 13.9648813,33.7894737 Z M-5,16.4124428 C-4.46512638,13.8944172 -2.16622793,12 0.589287924,12 L27.2232754,12 C30.3748094,12 32.9298246,14.477926 32.9298246,17.5338786 L32.9298246,17.6812803 C29.6854537,21.9468142 22.6099134,24.9122807 14.3815096,24.9122807 C5.3581779,24.9122807 -2.28459655,21.3500619 -5,16.4124428 Z" id="形状" fill="#E5EBFF" fill-rule="nonzero" mask="url(#mask-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

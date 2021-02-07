@@ -1,0 +1,100 @@
+/* components/myRedp/record-list-item/record-list-item.wxss */
+.recordItem {
+  box-sizing: border-box;
+  width: 86.7vw;
+  height: 9.6vh;
+  background: #FFFFFF;
+  box-shadow: 0 4rpx 20rpx 0 #E5EBFF;
+  border-radius: 32rpx;
+  margin-bottom: 2vh;
+  padding: 1.35vh 2.7vw;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 16rpx
+}
+
+.content-1 {
+  flex: 1;
+  margin-left: 2.7vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right {
+  color: #FE6B88;
+  font-size: 28rpx;
+}
+
+.title {
+  color: #4A4A4A;
+  font-size: 28rpx;
+}
+
+.time {
+  color: #8294FF;
+  font-size: 24rpx;
+  margin-bottom: 0.4vh;
+}
+
+.content-0 {
+  flex: 1;
+  height: 100rpx;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-0 {
+  height: 100%;
+  margin-left: 2.3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.right-0 {
+  height: 100%;
+  margin-right: 2.3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.title-0 {
+  color: #8294FF;
+  font-size: 28rpx;
+}
+
+.time-0 {
+  font-size: 24rpx;
+  color: #000000;
+}
+
+.money-0 {
+  font-size: 28rpx;
+  color: #FE6B88;
+}
+
+.state {
+  font-size: 24rpx;
+  color: #000;
+}

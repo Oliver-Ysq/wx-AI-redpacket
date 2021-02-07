@@ -1,0 +1,45 @@
+<view class="layout">
+  <view style="margin-top: 4.11vh">
+    <!-- 扫描状态 -->
+    <camera wx:if="{{state===-1}}" class="mycamera" style="height: {{cameraHeight}}px; width: {{cameraWidth}}px"
+      device-position="back" frame-size="medium" flash="off" binderror="onCameraError">
+
+      <!-- 扫描线 -->
+      <image src="/images/detail/scan.svg" mode="aspectFit" class="scanLine"></image>
+
+      <view class="tl angle"></view>
+      <view class="title">{{titleText}}</view>
+      <view class="tr angle"></view>
+      <view class="bl angle"></view>
+      <!-- <view class="camera-bottomText">
+      </view> -->
+      <view class="br angle"></view>
+    </camera>
+
+    <!-- 按下拍照 -->
+    <image wx:if="{{state!==-1}}" mode="heightFix" class="mycamera" src="{{imgPath}}">
+      <view class="tl angle"></view>
+      <view class="title">{{titleText}}</view>
+      <view class="tr angle"></view>
+      <view class="bl angle"></view>
+      <view class="camera-bottomText {{state===1?'animation-shaking':''}} {{state==2?'animation-hop':''}}">
+        {{bottomTexts[state]}}
+      </view>
+      <view class="br angle"></view>
+    </image>
+
+    <view class="space">
+      <!-- 初始 -->
+      <image class="takephoto" wx:if="{{state===-1}}" bindtap="takePhoto" mode="aspectFit"
+        src="/images/detail/scan/camera.svg">
+      </image>
+      <!-- 错误 -->
+      <view class="notice" wx:if="{{state==1}}" bindtap="restart">
+        重来
+      </view>
+      <!-- 成功 -->
+      <image class="yesNotice" wx:if="{{state==2}}" src="/images/detail/yes.svg" mode="aspectFit"></image>
+    </view>
+  </view>
+  <view class="bottomText">获得的红包将收入账户余额中</view>
+</view>

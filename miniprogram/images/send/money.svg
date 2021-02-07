@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="50px" viewBox="0 0 40 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="325" height="70" rx="16"></rect>
+        <filter x="-4.9%" y="-20.0%" width="109.8%" height="145.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.897068799   0 0 0 0 0.921990693   0 0 0 0 0.999003112  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="325" height="70" rx="16"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画图红包_首页" transform="translate(-25.000000, -238.000000)">
+            <rect id="矩形" fill="#FFFFFF" x="0" y="0" width="375" height="812"></rect>
+            <g id="编组" transform="translate(25.000000, 228.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="矩形" fill="#FFFFFF" xlink:href="#path-3"></use>
+                <path d="M15,10 C1.19153675,10 -10,21.1915367 -10,35 C-10,48.8084633 1.19153675,60 15,60 C28.8084633,60 40,48.8084633 40,35 C39.9944321,21.1915367 28.8028953,10 15,10 Z M25.9743875,32.0378619 L25.9743875,37.6057906 L18.0623608,37.6057906 L18.0623608,41.0077951 L25.9743875,41.0077951 L25.9743875,46.5757238 L18.0623608,46.5757238 L18.0623608,52.0657016 L11.9376392,52.0657016 L11.9376392,46.5757238 L4.40423163,46.5757238 L4.40423163,41.0077951 L11.9376392,41.0077951 L11.9376392,37.6057906 L4.40423163,37.6057906 L4.40423163,32.0378619 L11.8619154,32.0378619 L3.45211581,22.7282851 L7.58351893,18.9977728 L15.1280624,27.3496659 L22.6280624,18.9309577 L26.7873051,22.6336303 L18.4137528,32.0378619 L25.9743875,32.0378619 L25.9743875,32.0378619 Z" id="形状" fill="#E5EBFF" fill-rule="nonzero" mask="url(#mask-4)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>分享</title>
+    <defs>
+        <rect id="path-1" x="45" y="652" width="285" height="45" rx="22.5"></rect>
+        <filter x="-9.1%" y="-48.9%" width="118.2%" height="215.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.890167683   0 0 0 0 0.890167683  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分享红包" transform="translate(-133.000000, -665.000000)">
+            <g id="矩形">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFDBE2" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="分享" transform="translate(133.000000, 665.000000)" fill="#FE6B88" fill-rule="nonzero">
+                <path d="M19.0909091,9.09090908 C18.5909091,9.09090908 18.1818182,9.5 18.1818182,10 C18.1818182,14.5 14.5,18.1818182 10,18.1818182 C5.5,18.1818182 1.81818182,14.5 1.81818182,10 C1.81818182,5.5 5.5,1.81818182 10,1.81818182 C10.5,1.81818182 10.9090909,1.4090909 10.9090909,0.909090918 C10.9090909,0.409090937 10.5,0 10,0 C4.5,0 0,4.5 0,10 C0,15.5 4.5,20 10,20 C15.5,20 20,15.5 20,10 C20,9.5 19.5909091,9.09090908 19.0909091,9.09090908 Z" id="路径"></path>
+                <path d="M14,2.72727273 L15.7727273,2.95454545 L9.36363637,9.36363637 C9,9.72727273 9,10.2727273 9.36363637,10.6363636 C9.54545455,10.8181818 9.77272729,10.9090909 10,10.9090909 C10.2272727,10.9090909 10.4545454,10.8181818 10.6363636,10.6363636 L17.0454546,4.22727273 L17.2727273,6 C17.3181818,6.45454545 17.7272727,6.81818182 18.1818182,6.81818182 L18.3181818,6.81818182 C18.8181818,6.77272727 19.1818182,6.31818182 19.0909091,5.81818182 L18.7272727,2.86363637 C18.6363636,2.04545455 17.9545454,1.36363637 17.1363636,1.27272727 L14.1818182,0.909090918 C13.6818182,0.863636367 13.2272727,1.18181818 13.1818182,1.68181818 C13.1363636,2.18181818 13.5,2.63636363 14,2.72727273 Z" id="路径"></path>
+            </g>
+        </g>
+    </g>
+</svg>

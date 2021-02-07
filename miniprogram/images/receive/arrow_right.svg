@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>返回图标</title>
+    <defs>
+        <path d="M0,0 L375,0 L375,443 C375,451.836556 367.836556,459 359,459 L16,459 C7.163444,459 -6.94190838e-16,451.836556 0,443 L0,0 L0,0 Z" id="path-1"></path>
+        <filter x="-4.3%" y="-3.1%" width="108.5%" height="107.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.898039216   0 0 0 0 0.921568627   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter id="filter-3">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.509804 0 0 0 0 0.580392 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画图红包_领取" transform="translate(-237.000000, -378.000000)">
+            <rect fill="#F9F9F9" x="0" y="0" width="375" height="812"></rect>
+            <rect id="矩形" fill="#FFFFFF" x="0" y="0" width="375" height="812"></rect>
+            <g id="矩形">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="返回图标" transform="translate(236.000000, 376.000000)" filter="url(#filter-3)">
+                <g transform="translate(4.000000, 8.000000) scale(-1, 1) translate(-4.000000, -8.000000) ">
+                    <g id="Icons/Tint-Color/Black" transform="translate(0.666667, 2.000000)" fill="#FFFFFF">
+                        <path d="M6,10.9583333 L5.30302152,11.6666667 L0.433376149,6.71768725 C0.0433623528,6.32131953 0.0429502584,5.67909928 0.433376149,5.28231275 L5.30302152,0.333333333 L6,1.04166667 L1.12115066,6 L6,10.9583333 Z" id="图标颜色"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

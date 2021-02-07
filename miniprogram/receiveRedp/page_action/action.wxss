@@ -1,0 +1,19 @@
+.layout {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+
+.bottomText {
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #8294FF;
+  line-height: 36rpx;
+  margin-bottom: 4.66vh;
+}

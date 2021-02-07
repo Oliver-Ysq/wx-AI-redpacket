@@ -1,0 +1,6 @@
+<!--components/login/login.wxml-->
+<view class="layout" wx:if="{{url}}">
+  <view class="text">趣味挑战，赢取红包</view>
+  <image src="{{url}}" mode="aspectFit" class="backgound" />
+  <button class="myButton"  bindtap="setupApp">开始</button>
+</view> 

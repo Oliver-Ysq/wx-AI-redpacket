@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>勾@2x</title>
+    <defs>
+        <circle id="path-1" cx="24" cy="24" r="24"></circle>
+        <filter x="-33.3%" y="-29.2%" width="166.7%" height="166.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.537254902   0 0 0 0 0.603921569   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="识物红包_第一关成功" transform="translate(-154.000000, -663.000000)">
+            <g id="勾" transform="translate(164.000000, 671.000000)">
+                <g id="椭圆形备份-12">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#899AFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" points="18.9076458 30.4017909 12.2257519 23.5069281 10 25.8035818 18.9076458 35 38 15.2991239 35.7743229 13"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,95 @@
+/* pages/share/share.wxss */
+.layout {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bgWrapper {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.backgroundImg {
+  height: 55vh;
+  /* height: 800rpx; */
+  width: 570rpx;
+}
+
+.buttonsWrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8.288vh;
+  padding-bottom: 5.936vh;
+}
+
+.btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FE6B88;
+  color: #fff;
+  font-size: 32rpx;
+  box-shadow: 0 8rpx 32rpx 0 #FFE3E3;
+}
+
+.btn2 {
+  margin-top: 2.8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFDBE2;
+  color: #FE6B88;
+  font-size: 32rpx;
+  box-shadow: 0 8rpx 32rpx 0 #FFE3E3;
+}
+
+
+
+button {
+  box-sizing: border-box !important;
+  height: 90rpx !important;
+  width: 570rpx !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  line-height: inherit !important;
+  border-radius: 50rpx !important;
+}
+
+.btnText {
+  font-weight: normal !important;
+}
+
+button::after {
+  border: none;
+}
+
+.bottomText {
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #8294FF;
+  line-height: 36rpx;
+  margin-bottom: 4.66vh;
+}
+
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 2.7vw;
+}
+
+.canvas-poster {
+  /* background-color: #fafafa; */
+  zoom: 50%;
+  position: absolute;
+  left: -10000px;
+  /* background: #206949; */
+}

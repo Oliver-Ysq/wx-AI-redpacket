@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="30px" viewBox="0 0 106 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 3</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="285" height="400" rx="16"></rect>
+        <filter x="-5.6%" y="-3.5%" width="111.2%" height="108.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.898039216   0 0 0 0 0.921568627   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="285" height="400" rx="16"></rect>
+        <filter x="-5.6%" y="-3.5%" width="111.2%" height="108.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.898039216   0 0 0 0 0.921568627   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="红包新稿子" transform="translate(-135.000000, -314.000000)">
+            <g id="编组-4" transform="translate(45.000000, 147.000000)">
+                <g id="编组">
+                    <g id="矩形">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="矩形">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+                <g id="编组-3" transform="translate(90.000000, 167.000000)" fill="#8294FF">
+                    <path d="M26.4840764,26 C27.1847134,26 27.7579618,25.7452229 28.2675159,25.2993631 C28.7452229,24.7898089 29,24.2165605 29,23.5159236 C29,22.8152866 28.7452229,22.2101911 28.2675159,21.7324841 C27.7579618,21.2229299 27.1847134,21 26.4840764,21 C25.7834395,21 25.1783439,21.2229299 24.7324841,21.7324841 C24.2229299,22.2101911 24,22.8152866 24,23.5159236 C24,24.2165605 24.2229299,24.7898089 24.7324841,25.2993631 C25.1783439,25.7452229 25.7834395,26 26.4840764,26 Z" id="." fill-rule="nonzero"></path>
+                    <polygon id="*" fill-rule="nonzero" points="15.1351351 26 18.5585586 23.2972973 13.1531532 17.3063063 20.990991 15.2342342 19.5945946 11.0900901 12.1621622 14.1531532 12.7027027 6 8.28828829 6 8.82882883 14.1531532 1.3963964 11.0900901 -5.32907052e-15 15.2342342 7.83783784 17.3063063 2.43243243 23.2972973 5.85585586 26 10.4954955 19.1981982"></polygon>
+                    <polygon id="*" fill-rule="nonzero" points="47.1351351 26 50.5585586 23.2972973 45.1531532 17.3063063 52.990991 15.2342342 51.5945946 11.0900901 44.1621622 14.1531532 44.7027027 6 40.2882883 6 40.8288288 14.1531532 33.3963964 11.0900901 32 15.2342342 39.8378378 17.3063063 34.4324324 23.2972973 37.8558559 26 42.4954955 19.1981982"></polygon>
+                    <polygon id="*" fill-rule="nonzero" points="73.1261261 26 76.5495495 23.2972973 71.1441441 17.3063063 78.981982 15.2342342 77.5855856 11.0900901 70.1531532 14.1531532 70.6936937 6 66.2792793 6 66.8198198 14.1531532 59.3873874 11.0900901 57.990991 15.2342342 65.8288288 17.3063063 60.4234234 23.2972973 63.8468468 26 68.4864865 19.1981982"></polygon>
+                    <text id="元" font-family="PingFangSC-Semibold, PingFang SC" font-size="22" font-weight="500">
+                        <tspan x="83.981982" y="23">元</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

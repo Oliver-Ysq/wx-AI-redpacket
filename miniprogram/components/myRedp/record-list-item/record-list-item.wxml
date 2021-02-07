@@ -1,0 +1,29 @@
+<!--components/myRedp/record-list-item/record-list-item.wxml-->
+<view class="recordItem">
+
+  <!-- 我发送的 -->
+  <block wx:if="{{type==0}}">
+    <view class="content-0">
+      <view class="left-0">
+        <view class="title-0">{{map[content.type]}}</view>
+        <view class="time-0">{{content.time}}</view>
+      </view>
+      <view class="right-0">
+        <view class="money-0">{{content.total_money}}元</view>
+        <view class="state">{{content.state}} {{content.used_num}}/{{content.total_num}}</view>
+      </view>
+    </view>
+  </block>
+
+  <!-- 我收到的 -->
+  <block wx:else>
+    <image src="{{content.ava}}" mode="aspectFit" class="avatar"></image>
+    <view class="content-1">
+      <view class="left">
+        <view class="title">{{map[content.type]}}-来自{{content.nick}}</view>
+        <view class="time">{{content.time}}</view>
+      </view>
+      <view class="right">{{content.money}}元</view>
+    </view>
+  </block>
+</view>

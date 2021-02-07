@@ -1,0 +1,25 @@
+{
+  "name": "miniprogram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs-backend-wasm": "2.1.0",
+    "@tensorflow/tfjs-backend-webgl": "2.1.0",
+    "@tensorflow/tfjs-backend-cpu": "2.1.0",
+    "@tensorflow/tfjs-core": "2.1.0",
+    "@tensorflow/tfjs-converter": "2.1.0",
+    "abab": "^2.0.0",
+    "fetch-wechat": "^0.0.3",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "resolutions": {
+    "tfjs-image-recognition-base/@tensorflow/tfjs-core": "<=1.2.9"
+  }
+}

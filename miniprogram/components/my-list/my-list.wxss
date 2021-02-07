@@ -1,0 +1,62 @@
+.infoCard {
+  width: 690rpx;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px 0px #E5EBFF;
+  border-radius: 16px;
+  margin-bottom: 2.75vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.bgImg {
+  width: 66rpx;
+  height: 100rpx;
+  position: absolute;
+  right: 0rpx;
+  z-index: 0;
+  opacity: 1;
+}
+
+.cardLeft {
+  display: flex;
+}
+
+.cardRight {
+  z-index: 1;
+}
+
+.detailInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 20rpx;
+}
+
+.detailName {
+  font-size: 12px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #4A4A4A;
+}
+
+.detailTime {
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #8294FF;
+}
+
+.detailImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 16rpx;
+}

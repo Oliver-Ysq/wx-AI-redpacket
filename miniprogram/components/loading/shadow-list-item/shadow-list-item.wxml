@@ -1,0 +1,9 @@
+<block wx:for="{{placeHolderList}}" wx:key="item">
+  <view class="loadingPlace">
+    <view class="loading-left" style="{{type!='0'?'display: none;':''}}"></view>
+    <view class="loading-right">
+      <view class="loading-item"></view>
+      <view class="loading-item"></view>
+    </view>
+  </view>
+</block>

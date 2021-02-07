@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "my-camera": "../../components/my-camera/my-camera"
+    },
+    "navigationBarTitleText": "表情红包"
+}

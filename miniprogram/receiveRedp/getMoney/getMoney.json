@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "my-list": "/components/my-list/my-list",
+        "shadow-list-item": "/components/loading/shadow-list-item/shadow-list-item"
+    }
+}

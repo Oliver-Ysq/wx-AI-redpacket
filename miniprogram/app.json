@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/shareRedp/shareRedp",
+    "pages/myRedp/myRedp"
+  ],
+  "subPackages": [
+    {
+      "root": "receiveRedp",
+      "pages": [
+        "receiveRedp",
+        "page_draw/draw",
+        "page_emotion/emotion",
+        "page_action/action",
+        "page_scan/scan",
+        "getMoney/getMoney"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "AI红包"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "tfjsPlugin": {
+      "version": "0.1.0",
+      "provider": "wx6afed118d9e81df9"
+    }
+  }
+}

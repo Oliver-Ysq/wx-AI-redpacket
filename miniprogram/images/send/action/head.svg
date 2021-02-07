@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 4</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="325" height="180" rx="16"></rect>
+        <filter x="-4.9%" y="-7.8%" width="109.8%" height="117.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.897068799   0 0 0 0 0.921990693   0 0 0 0 0.999003112  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="325" height="180" rx="16"></rect>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#E5EBFF" offset="0%"></stop>
+            <stop stop-color="#8294FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="动作红包_设置" transform="translate(-95.000000, -493.000000)">
+            <rect fill="#F9F9F9" x="0" y="0" width="375" height="812"></rect>
+            <rect id="矩形" fill="#FFFFFF" x="0" y="0" width="375" height="812"></rect>
+            <g id="编组-3" transform="translate(25.000000, 429.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="矩形" fill="#FFFFFF" xlink:href="#path-3"></use>
+                <g id="编组-4" mask="url(#mask-4)">
+                    <g transform="translate(70.000000, 64.000000)">
+                        <circle id="椭圆形" fill="url(#linearGradient-5)" fill-rule="evenodd" cx="25" cy="25" r="25"></circle>
+                        <path d="M24.7708862,26.0359544 C28.1384459,26.0359544 30.8786228,23.3368861 30.8784385,20.0179887 C30.8784385,16.6992756 28.138469,14 24.7709092,14 C21.4033725,14 18.6634029,16.7002198 18.6634029,20.0179887 C18.6634029,23.3359188 21.4033495,26.0359544 24.7708862,26.0359544 Z M27.2877873,26.615458 L22.7115218,26.615458 C18.4589197,26.615458 15,30.0212245 15,34.2087669 L15,34.6594867 C15,36.8486251 18.4035556,36.8486251 22.7115218,36.8486251 L27.2877873,36.8486251 C31.4262528,36.8486251 35,36.8486251 35,34.6594867 L35,34.2087669 C35,30.0221687 31.5404815,26.615458 27.2877873,26.615458 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,7 @@
+<view class="layout">
+  <my-camera style="margin-top: 4.11vh" maxWrongTime="{{maxWrongTime}}" wrongTime="{{wrongTime}}" imgPath="{{imgPath}}"
+    titleText="{{titleText}}" deviceType="front" frameSize="medium" activeType="3" bottomText="{{bottomText[state]}}"
+    levelText="{{levelMap[currentLevel]}}" state="{{state}}" bind:getCanvasThat="getCanvasThat"
+    bind:handleFrame="handleFrame" bind:setWrongTimeto0="setWrongTimeto0" />
+  <view class="bottomText">获得的红包将收入账户余额中</view>
+</view>

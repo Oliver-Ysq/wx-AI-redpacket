@@ -1,0 +1,33 @@
+<!-- <view wx:if="{{test}}">
+  <image src="{{test}}" alt="" style="height: 100px; width:100px; border: 1px solid;" mode="aspectFit" />
+</view> -->
+<view class="layout">
+  <view class="header">
+    <view class="headerContent">
+      <view class="line1">请画出以下题目:</view>
+      <view class="line2">{{titleText}}</view>
+    </view>
+  </view>
+
+  <!-- canvas -->
+  <view class="canvas-wrapper">
+    <view class="notice">{{resultText[state]}}</view>
+    <canvas canvas-id="canvas" id="canvas" style="width:{{canvasw}}px; height: {{canvash}}px; background-color: white;"
+      disable-scroll="true" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="drawEnd">
+    </canvas>
+    <view class="footer">
+      <cover-view class="clear-canvas" bindtap="clearCanvas">
+        <cover-image src="/images/detail/canvas/eraser.png" mode="aspectFill" class="eraser"> </cover-image>
+      </cover-view>
+      <view class="getButton" style="{{state==3?'color: white; background: #FE6B88;':''}}" bindtap="submit">
+        领取红包
+      </view>
+      <view class="bottomWrapper">
+        <view class="bottomText">获得的红包将收入账户余额中</view>
+      </view>
+    </view>
+
+  </view>
+
+
+</view>

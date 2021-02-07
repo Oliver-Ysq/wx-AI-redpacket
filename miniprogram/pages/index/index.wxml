@@ -1,0 +1,123 @@
+<!-- 加载页 -->
+<loading wx:if="{{!hasRequestData}}" />
+<block wx:else>
+  <!-- 登录页 -->
+  <login wx:if="{{!hasSessionId}}" bind:setupApp="setupApp"></login>
+  <!-- 页面主体 -->
+  <block wx:else>
+    <view class="layout">
+      <view class="btnBox">
+        <block wx:for="{{typeList}}" wx:key="item">
+          <view class="btnWrapper" data-id="{{index}}" bindtap="chooseType">
+            <image class="btnBorder" src="{{item.src}}" mode="aspectFit" />
+            <view class="btnText">{{item.text}}</view>
+            <view class="{{activeType==index?'active':''}}"></view>
+          </view>
+        </block>
+      </view>
+
+      <!-- 内容：选择红包信息 -->
+      <view class="content">
+        <!-- 红包金额 -->
+        <view class="Input">
+          <image class="bgImg" src="/images/send/money.svg" mode="aspectFit" />
+          <view class="inputText inputTitle">红包金额</view>
+          <view class="inputWrapper">
+            <input type="digit" bindinput="checkMoneyFormat" bindfocus="handleFocus" class="placeHolder input"
+              placeholder="{{focus1?'':'填写红包总金额(<200)'}}" placeholder-class="placeHolder"
+              placeholder-style="color:#E5EBFF" bindblur="getInputValue" data-type="0" value="{{money}}" />
+            <view class="inputText">元</view>
+          </view>
+        </view>
+        <!-- 红包个数 -->
+        <view class="Input">
+          <image class="bgImg" src="/images/send/redp.svg" mode="aspectFit" />
+          <view class="inputText inputTitle">红包个数</view>
+          <view class="inputWrapper">
+            <input type="number" bindinput="checkAmountFormat" bindfocus="handleFocus" class="placeHolder input"
+              placeholder="{{focus2?'':'填写红包个数(<20)'}}" placeholder-class="placeHolder"
+              placeholder-style="color: #E5EBFF;" bindblur="getInputValue" data-type="1" value="{{amount}}" />
+            <view class="inputText">个</view>
+          </view>
+        </view>
+        <!-- 选择题目 -->
+        <view class="setQuestion" style="margin-bottom:{{questionState==1?'0.7vh':'16.7vh'}};">
+          <view class="questionInput">
+            <image class="bgImg" src="/images/send/question.svg" mode="aspectFit" />
+            <view class="inputText inputTitle">设置题目</view>
+
+            <view class="inputWrapper" wx:if="{{questionState==0}}" bindtap="setQuestion">
+              <view class="placeHolder mid" style="color:#E5EBFF">请选择</view>
+              <image class="rightArrow" src="/images/send/right.svg" mode="aspectFit" style="margin-left:9px;" />
+            </view>
+
+            <view class="inputWrapper" wx:if="{{questionState==1}}" bindtap="cancel">
+              <view class="placeHolder mid">取消</view>
+            </view>
+
+            <view class="inputWrapper" wx:if="{{questionState==2}}" bindtap="reChoose">
+              <view class="placeHolder mid" bindtap>{{question}}</view>
+              <image class="rightArrow" src="/images/send/right.svg" mode="aspectFit" style="margin-left:9px;" />
+            </view>
+          </view>
+
+          <modal hidden="{{hiddenmodalput}}" title="请输入自定义题目" confirm-text="确认" cancel-text="取消"
+            bindcancel="modalcancel" bindconfirm="confirm">
+            <input style="margin-top:12px; margin-bottom:12px;" type="text" placeholder="输入..." bindinput="modalinput"
+              value="{{question}}" auto-focus />
+          </modal>
+
+          <!-- 选择item -->
+          <view wx:if="{{questionState==1 && activeType!==1 && activeType!==3}}" class="questionBox"
+            style="{{activeType==2?'height: 20vh':''}}">
+            <view style="position: relative; top: -20rpx; z-index: 10;">
+              <block wx:for="{{questionList[activeType]}}" wx:key="item">
+                <view class="quesItem {{index<=3?'firstLine':'secondLine'}}" bindtap="chooseQuestion" id="{{index}}">
+                  {{item}}</view>
+              </block>
+            </view>
+            <view wx:if="{{questionState==1 && (activeType==0 || activeType==2)}}" class="next">
+              <view class="zidingyi" wx:if="{{activeType==2}}" bindtap="showInputModal">
+                <image mode="aspectFit" class="refresh" src="/images/send/add.svg" />
+                <text>自定义输入</text>
+              </view>
+              <view style="flex-grow: 1;" class="refreshWrapper" bindtap="refresh">
+                <image mode="aspectFit" class="refresh" src="/images/send/fresh.svg" />
+                <text>换一批</text>
+              </view>
+            </view>
+          </view>
+          <scroll-view wx:if="{{questionState==1 && activeType===1}}" scroll-x="true" class="questionBox"
+            style="white-space: nowrap">
+            <block wx:for="{{questionList[activeType]}}" wx:key="item">
+              <view class="emotionWrapper" bindtap="chooseQuestion" id="{{index}}">
+                <image src="{{item.src}}" class="itemImg" />
+                <view class="emotion-text">{{item.type}}</view>
+              </view>
+            </block>
+          </scroll-view>
+          <view wx:if="{{questionState==1 && activeType===3}}" class="questionBox action-box">
+            <view class="action-item" bindtap="chooseQuestion" id="{{0}}">
+              <image src="/images/send/action/head.svg" class="action-icon" mode="aspectFit" />
+              <view class="action-txt">头部动作挑战</view>
+            </view>
+            <!-- <view class="action-item" bindtap="chooseQuestion" id="{{1}}">
+              <image src="/images/send/action/hand.svg" class="action-icon" mode="aspectFit"></image>
+              <view class="action-txt">手部动作挑战</view>
+        </view>-->
+          </view>
+        </view>
+      </view>
+
+      <view class="footer">
+        <!-- 生成红包按钮 -->
+        <button class="getButton" open-type="getUserInfo" bindgetuserinfo="judgeAuthority"
+          style="{{ready?'color: white; background: #FE6B88;':''}}">生成{{typeList[activeType].text}}</button>
+        <button open-type="getUserInfo" bindgetuserinfo="judgeAuthorityMyRedp" class="bottomWrapper">
+          <image class="bottomImg" mode="aspectFit" src="/images/send/my.svg" />
+          <view class="bottomText">我的红包</view>
+        </button>
+      </view>
+    </view>
+  </block>
+</block>

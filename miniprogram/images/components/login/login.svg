@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="63px" viewBox="0 0 50 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状</title>
+    <defs>
+        <circle id="path-1" cx="172" cy="150" r="75"></circle>
+        <filter x="-10.7%" y="-9.3%" width="121.3%" height="121.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.509803922   0 0 0 0 0.580392157   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-11-Pro" transform="translate(-163.000000, -303.000000)">
+            <rect id="矩形" fill="#FFFFFF" x="0" y="0" width="375" height="812"></rect>
+            <g id="编组" transform="translate(16.000000, 184.000000)">
+                <g id="椭圆形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#8294FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M189.917448,119 L154.082552,119 C150.189493,119 147.046904,122.142589 147.046904,126.035647 L147.046904,174.206379 C147.046904,178.099437 150.189493,181.242026 154.082552,181.242026 L189.964353,181.242026 C193.857411,181.242026 197,178.099437 197,174.206379 L197,126.035647 C196.953096,122.142589 193.810507,119 189.917448,119 Z M169.962949,145.141651 L176.876173,167.54878 L171.991592,167.54878 L171.111057,164.212748 L165.26608,164.212748 L164.332303,167.54878 L159.448405,167.54878 L166.360264,145.141651 L169.962949,145.141651 Z M184.345216,145.141651 L184.345216,167.54878 L179.365854,167.54878 L179.365854,145.141651 L184.345216,145.141651 Z M168.202081,155.100375 L166.917448,160.079737 L169.407129,160.079737 L168.202081,155.100375 Z M196.953096,128.615385 L196.953096,131.007505 C196.953096,131.007505 185.273921,135.791745 173.172608,135.791745 C160.320826,135.791745 147,131.007505 147,131.007505 L147,128.615385 C147,128.615385 160.320826,132.227017 173.172608,132.227017 C185.227017,132.227017 196.953096,128.615385 196.953096,128.615385 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

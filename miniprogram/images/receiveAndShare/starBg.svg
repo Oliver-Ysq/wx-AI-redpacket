@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="116px" viewBox="0 0 375 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <defs>
+        <path d="M0,0 L375,0 L375,443 C375,451.836556 367.836556,459 359,459 L16,459 C7.163444,459 -6.94190838e-16,451.836556 0,443 L0,0 L0,0 Z" id="path-1"></path>
+        <filter x="-4.3%" y="-3.1%" width="108.5%" height="107.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.898039216   0 0 0 0 0.921568627   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="表情红包_开始" transform="translate(0.000000, -135.000000)">
+            <rect fill="#F9F9F9" x="0" y="0" width="375" height="812"></rect>
+            <rect id="矩形" fill="#FFFFFF" x="0" y="0" width="375" height="812"></rect>
+            <g id="矩形">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <circle id="椭圆形" fill="#975BFF" cx="104" cy="246" r="5"></circle>
+            <circle id="椭圆形" fill="#975BFF" cx="306" cy="243" r="5"></circle>
+            <circle id="椭圆形备份-11" fill="#42D57E" cx="260" cy="241" r="5"></circle>
+            <circle id="椭圆形备份-6" fill="#FEBE65" cx="278" cy="212" r="4"></circle>
+            <circle id="椭圆形备份-7" fill="#975BFF" cx="265" cy="175" r="3"></circle>
+            <circle id="椭圆形备份-8" fill="#16C8FF" cx="304" cy="185" r="3"></circle>
+            <circle id="椭圆形备份-9" fill="#FEBE65" cx="292" cy="157" r="2"></circle>
+            <circle id="椭圆形备份-10" fill="#42D57E" cx="255" cy="137" r="2"></circle>
+            <circle id="椭圆形备份" fill="#FEBE65" cx="53" cy="238" r="5"></circle>
+            <circle id="椭圆形备份" fill="#FEBE65" cx="94" cy="167" r="2"></circle>
+            <circle id="椭圆形备份-2" fill="#16C8FF" cx="103" cy="212" r="3"></circle>
+            <circle id="椭圆形备份-3" fill="#42D57E" cx="67" cy="190" r="2"></circle>
+            <circle id="椭圆形备份-4" fill="#16C8FF" cx="57" cy="151" r="4"></circle>
+            <circle id="椭圆形备份-5" fill="#975BFF" cx="127" cy="154" r="3"></circle>
+        </g>
+    </g>
+</svg>

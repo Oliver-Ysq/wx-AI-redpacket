@@ -1,0 +1,6 @@
+<view class="layout">
+  <view class="content">
+    <image src="/images/components/loading/loading.svg" mode="aspectFit" class="loadingImg"></image>
+    <view class="loadingTxt">加载中...</view>
+  </view>
+</view>

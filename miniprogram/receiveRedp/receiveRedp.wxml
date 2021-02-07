@@ -1,0 +1,42 @@
+<!-- 尝试查询用户权限情况 -->
+<loading wx:if="{{!hasChecked}}" />
+<block wx:else>
+
+  <!-- 尝试获得用户权限信息 -->
+  <login wx:if="{{!hasSessionId}}" bind:setupApp="setupApp"></login>
+  <block wx:else>
+    <view class="layout" wx:if="{{hasMoneyFlag}}">
+      <view class="bgWrapper">
+        <view class="userInfo">
+          <image src="{{userInfo.avatarUrl}}" mode="aspectFit" class="avatar" />
+          <view class="infoText">{{userInfo.nickname}}的{{type}}红包</view>
+        </view>
+        <view class="begin-text">{{MainText}}</view>
+        <view class="reminder">
+          <view class="reminder-text">{{textLineOne[activeType]}}</view>
+          <view class="reminder-text">{{textLineTwo[activeType]}}</view>
+        </view>
+        <image src="{{imgUrl}}" mode="aspectFit" class="mainIcon" />
+      </view>
+      <view class="buttonsWrapper">
+        <button class="btn" open-type="getUserInfo" bindgetuserinfo="judgeAuthority">
+          <text class="btnText">{{moneyFlag==0?'红包空啦，发送新红包！':(moneyFlag==-1?'已领取过，发送新红包！':'领取红包')}}</text>
+        </button>
+        <view class="Line2-wrapper">
+          <block wx:if="{{moneyFlag>0}}">
+            <view class="buttonLeft" bindtap="setNewRedp">
+              <image src="/images/receiveAndShare/redp.svg" mode="aspectFit" class="Icon" />
+              <view class="buttonText">发送新红包</view>
+            </view>
+          </block>
+          <block wx:else>
+            <view class="buttonText" style="font-size: 28rpx;" bindtap="checkDetail">
+              点击查看领取详情
+              <image src="/images/receive/arrow_right.svg" mode="aspectFit" class="arrow" />
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </block>
+</block>

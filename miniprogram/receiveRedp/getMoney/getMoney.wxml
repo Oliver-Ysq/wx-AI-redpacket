@@ -1,0 +1,50 @@
+<view class=" layout">
+  <view class="shadowWrapper">
+    <view class="userInfo">
+      <image src="{{avatarUrl}}" mode="aspectFit" class="avatar"></image>
+      <view class="infoText">{{nickname}}的{{type}}红包</view>
+    </view>
+    <view class="topHalf">
+      <view class="header">
+        <image src="/images/receiveAndShare/starBg.svg" mode="aspectFit" class="bg"></image>
+        <block wx:if="{{ activeType==0 && stateFlag>0 }}">
+          <image src="{{imgUrl}}" mode="aspectFit" style="border-radius: 0;" class="cameraWrapper"></image>
+        </block>
+        <block wx:else>
+          <image src="{{imgList[activeType]}}" mode="aspectFit" class="cameraWrapper"></image>
+        </block>
+      </view>
+
+      <view class="textBox">
+
+        <view class="line1" wx:if="{{stateFlag>0}}">恭喜！耗时 {{spendTime}} 秒挑战成功</view>
+        <view class="line1" wx:if="{{stateFlag<0}}">已完成挑战获得红包</view>
+        <view class="line1" wx:if="{{stateFlag===0}}">红包已被领完，下次再试试吧~</view>
+        <view class="line2" wx:if="{{stateFlag!==0}}" ><text style="font-size: 48rpx">¥</text>{{money}}</view>
+        <view class="line3" wx:if="{{stateFlag!==0}}">已存入账户余额</view>
+        
+        <view class="buttonLeft" bindtap="sendNewRedp">
+          <image src="/images/receiveAndShare/redp.svg" mode="aspectFit" class="Icon"></image>
+          <view class="buttonText">发送新红包</view>
+        </view>
+      </view>
+
+      <!-- <view class="line"></view>
+        <button class="buttonRight btnRest" bindtap="share" open-type="share">
+          <image src="/images/receiveAndShare/share.svg" mode="aspectFit" class="Icon"></image>
+          <view class="buttonText">分享该红包</view>
+        </button> -->
+
+    </view>
+  </view>
+
+  <view class="listTitle">已领取{{haveOpen}}/{{total}}，剩余{{moneyLeft}}元</view>
+  <view class="listWrapper">
+    <shadow-list-item wx:if="{{!hasRequestData}}"></shadow-list-item>
+    <my-list infoList="{{infoList}}" wx:if="{{hasRequestData}}" />
+  </view>
+  <view class="footer" bindtap="gotoMyRedp">
+    <image src="/images/send/my.svg" mode="aspectFit" class="footerImg"></image>
+    <view class="footerText">我的红包</view>
+  </view>
+</view>

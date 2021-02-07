@@ -1,0 +1,15 @@
+<block wx:for="{{infoList}}" wx:key="item">
+  <view class="infoCard">
+    <image src="/images/send/money_R.svg" mode="aspectFit" class="bgImg"></image>
+    <view class="cardLeft">
+      <image class="detailImg" src="{{item.avaurl}}"></image>
+      <view class="detailInfo">
+        <view class="detailName">{{item.name}}</view>
+        <view class="detailTime">{{item.time?item.time:'今天'}}</view>
+      </view>
+    </view>
+    <view class="cardRight">
+      {{item.money}}元
+    </view>
+  </view>
+</block>

@@ -1,0 +1,23 @@
+<view class="layout">
+  <view class="tabWrapper">
+    <view class="tabItem" bindtap="switchTab" data-id="0">
+      我发出的
+      <view class="{{active==0?'active':''}}"></view>
+    </view>
+    <view class="tabItem" bindtap="switchTab" data-id="1">
+      我收到的
+      <view class="{{active==1?'active':''}}"></view>
+    </view>
+  </view>
+  <swiper class="main" current="{{active}}" bindanimationfinish="change">
+
+    <swiper-item>
+      <layout-swiper-item type="0" avatarUrl="{{avatarUrl}}" list="{{sendList}}" money="{{moneySend || 0}}"
+        number="{{numberSend || 0}}" nickname="{{nickname}}" hasInfo="{{hasSendInfo}}"></layout-swiper-item>
+    </swiper-item>
+    <swiper-item>
+      <layout-swiper-item type="1" avatarUrl="{{avatarUrl}}" list="{{receiveList}}" money="{{moneyReceive || 0}}"
+        number="{{numberReceive || 0}}" nickname="{{nickname}}"></layout-swiper-item>
+    </swiper-item>
+  </swiper>
+</view>

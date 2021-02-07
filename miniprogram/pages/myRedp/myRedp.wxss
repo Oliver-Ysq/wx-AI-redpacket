@@ -1,0 +1,49 @@
+/* pages/myRedp/myRedp.wxss */
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.tabWrapper {
+  height: 7.6vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tabItem {
+  height: 100%;
+  line-height: 7.6vh;
+  font-size: 32rpx;
+  color: #000000;
+  position: relative;
+}
+
+.active {
+  height: 10rpx;
+  background: #8294FF;
+  border-radius: 2.5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.main {
+  flex: 1;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+swiper-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}

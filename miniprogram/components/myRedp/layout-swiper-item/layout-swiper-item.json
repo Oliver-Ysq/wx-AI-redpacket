@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "record-list-item":"/components/myRedp/record-list-item/record-list-item",
+    "shadow-list-item":"/components/loading/shadow-list-item/shadow-list-item"
+  }
+}

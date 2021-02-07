@@ -1,0 +1,30 @@
+.layout {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10vh;
+}
+
+.loadingImg {
+  width: 6.85vh;
+  height: 6.85vh;
+  animation: myRotate 1.2s linear infinite;
+}
+
+.loadingTxt {
+  margin-top: 4.11vh;
+  font-size: 30rpx;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #8294FF;
+}
+
+@keyframes myRotate{
+  0%{ -webkit-transform: rotate(0deg);}
+  50%{ -webkit-transform: rotate(180deg);}
+  100%{ -webkit-transform: rotate(360deg);}
+}
