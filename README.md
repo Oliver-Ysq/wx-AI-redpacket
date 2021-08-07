@@ -52,23 +52,21 @@
 
 - ##### arraybuffer => canvasPutImageData => canvasToTempFile => readAsBase64： 
 
-  canvasPutImageData阻塞UI渲染
+  性能极差
 
   ##### 原理：
 
-  咨询小程序中心的开发人员得知：camera组件在gpu运行；oncameraframe在cpu处理arraybuffer；而拿到的cpu又通过canvas的API利用GPU获取图片数据。效率非常低而且阻塞渲染；
+  咨询小程序中心的开发人员得知：camera组件在gpu运行；oncameraframe在cpu处理arraybuffer；而拿到的cpu又通过canvas的API利用GPU获取图片数据。效率非常低；
 
   而目前的小程序还没有原生支持GPU->GPU的映射方式，预计未来会增加。
-
-  ##### 反思：
-
-  也许使用node中间层 将arraybuffer编码为base64图片（利用类似jpeg-js的库），再将对应的数据发送到服务器，效率会高一些。但是本身项目的体量不大，并且上线时间紧，搁置了这种想法。
 
 ### 解决方案：
 
 - ##### 前端部署TensorFlowJS：
 
   利用arrayBuffer转化unit8array 作为样本输入，实时获得预测值。
+### 博客记录
+https://segmentfault.com/a/1190000038354132
 
 ## redid类型错误
 
